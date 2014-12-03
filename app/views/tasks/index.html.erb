@@ -1,17 +1,19 @@
-<h1>Listing tasks</h1>
+<h1>To Do</h1>
 
 <table>
   <thead>
     <tr>
       <th>Content</th>
+      <th>State</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @tasks.each do |task| %>
+    <% @to_do.each do |task| %>
       <tr>
         <td><%= task.content %></td>
+        <td><%= task.state %></td>
         <td><%= link_to 'Show', task %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +24,56 @@
 
 <br>
 
+
+<h1>Doing</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doing.each do |task| %>
+      <tr>
+        <td><%= task.content %></td>
+        <td><%= task.state %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Done</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @done.each do |task| %>
+      <tr>
+        <td><%= task.content %></td>
+        <td><%= task.state %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
 <%= link_to 'New Task', new_task_path %>
