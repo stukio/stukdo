@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+production: &default
+  adapter: postgresql
+  database: todoism
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
