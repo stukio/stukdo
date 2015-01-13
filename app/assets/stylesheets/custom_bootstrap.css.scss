@@ -1,0 +1,61 @@
+html, html a {
+     text-rendering: optimizeLegibility !important;
+     -webkit-font-smoothing: antialiased;
+     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+// NAVBAR
+
+.navbar {
+font-size: 12px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+a.navbar-brand {
+text-transform: lowercase;
+}
+
+// BUTTONS
+
+.btn {
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border: transparent;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	padding: 15px 30px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+	padding: 8px 15px;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+padding: 5px 10px;
+font-size: 11px;
+}
+
+// FONTS
+
+p.small {
+font-size: 14px;
+font-weight: 300;
+}
+
+// LOGIN
+
+.jumbotron {
+    border: 4px solid #1582B1;
+    margin-top: 75px;
+}
+
+.jumbotron h2 {
+	font-weight: 600;
+}
+
+p {
+	font-weight: 300;
+	font-size: 16px;
+}
