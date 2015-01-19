@@ -1,0 +1,19 @@
+body {
+	background: image-url("bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white {
+	color: white;
+}
+
+#task_content {
+	margin-bottom: 10px;
+}
